@@ -15,8 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  let input = `Hello, ${name}!`;
-  return input;
+  return `Hello, ${name}!`
 }
 // Remember to call the function to test
 console.log('Test - should say "Hello, Chris!"', helloName('Chris'));
@@ -40,10 +39,14 @@ console.log('Test - Should say "24"', multiplyThree(2,3,4));
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else {
+    return false;
+  }
 }
+console.log('Test - Should say "True"', isPositive(5));
+
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
