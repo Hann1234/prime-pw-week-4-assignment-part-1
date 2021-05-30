@@ -68,8 +68,16 @@ console.log('Test - Should return "undefined"', getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 function find( value, array ){
+  for (variable of array) {
+    if (variable === value) {
+      return true;
+    }
+  }
+      return false;
+    }
 
-}
+console.log('Test - Should return "true"', find(10, [9, 6, 10, 11]));
+console.log('Test - Should return "false"', find(10, [9, 4, 8, 7]));
 
 // ----------------------
 // Stretch Goals
